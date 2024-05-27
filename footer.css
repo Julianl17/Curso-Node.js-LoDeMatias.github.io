@@ -1,0 +1,89 @@
+footer {
+    width: 100%;
+    margin:0;
+    padding: 0;
+    
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:#696969;
+    padding: 50px;
+}
+
+.footer-sector1 {
+    margin: 10px 0;
+    border-bottom: 1px solid var(--color-primario);
+}
+
+.footer-sector1 ul {
+    list-style: none;
+    text-align: center;
+
+}
+
+.footer-sector1 ul li a {
+    text-decoration: none;
+    color: var(--color-fuente-2);
+    font-size: 1.5rem;
+
+}
+
+.footer-sector1 ul li {
+    padding: 5px 0;
+
+}
+
+.footer-sector2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+    color: var(--color-fuente-2);
+}
+
+.footer-sector2 h3 {
+    font-size: var(--tamaño-fuente-2);
+}
+
+.footer-sector2 p {
+    font-size: var(--tamaño-fuente-3);
+    text-align: center;
+
+    color: rgb(0, 255, 76);
+    transition: 0.5s;
+}
+
+.footer-sector2 p i {
+    font-size: var(--tamaño-fuente-2);
+    color: rgb(0, 255, 76);
+}
+
+/*-----------EFECTOS---------*/
+
+.footer-sector1 ul li a:hover {
+    color: var(--color-fuente-1);
+    border-bottom: solid 2px var(--color-terciario);
+
+}
+
+.footer-sector2 p:hover {
+    transform: scale(1.2);
+
+}
+/* Diseño Responsivo */
+@media (max-width:480px) {
+    .footer-content h3{
+        font-size: 28px;
+    }
+    .footer-content a{
+        font-size: 14px !important; 
+    }
+    .footer-content p{
+        font-size: 14px !important;
+    }
+}

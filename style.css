@@ -1,0 +1,31 @@
+@import url(nav.css);
+@import url(banner.css);
+@import url(productos.css);
+@import url(footer.css);
+
+:root {
+  --color-primario: #fcfcfc;
+  --color-secundario: #3E3E3E;
+  --color-terciario: #a7a7a7;
+
+  --color-sombra-1: #e4e4e4d7;
+  --color-fuente-1: #222222;
+  --color-fuente-2: #eeeeee;
+
+  
+    
+    --fuente-1: "Space Grotesk", 'Lucida Sans Regular';
+    --tamaño-fuente-1: 50px;
+    --tamaño-fuente-2: 30px;
+    --tamaño-fuente-3: 20px;
+    --tamaño-fuente-4: 15px;
+    --tamaño-fuente-5: 10px;
+    --tamaño-slide: 120px;
+    --universal-gradient:linear-gradient(to right, var(--color-terciario) 90%,var(--color-fuente-1));
+  
+  }
+
+
+  body{
+    background: var(--color-primario);
+  }

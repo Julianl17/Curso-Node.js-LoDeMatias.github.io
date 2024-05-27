@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <title>Almacen lo de Matias</title>
+</head>
+
+<body>
+  <header class="container">
+    <div class="container_logo">
+      <div class="logo">
+        <a href="index.html">
+          <img src="./logo.png" alt="Almacen_lo_de_Matias_Logo">
+        </a>
+      </div>
+    </div>
+    <nav>
+      <!--  Aqui va el menu de navegacion: Sobre nosotros, Ofertas, Productos, Iniciar Sesión-->
+      <div class="container_nav">
+        <ul>
+          <li><a href="#sn"><i class="fa-solid fa-users"></i>Sobre nosotros</a></li>
+          <li><a href="#ofertas"><i class="fa-solid fa-percent"></i>Ofertas</a></li>
+          <li><a href="#mostrador"><i class="fa-solid fa-bottle-water"></i></i>Productos</a></li>
+          <li><a href="./iniciar_sesion.html" type="_blank" id="login"><i
+                class="fa-solid fa-right-to-bracket"></i>Iniciar
+              sesión</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section id="#sn" class="banner container">
+      <div class="banner_content">
+        <h1>Almacen lo de Matias</h1>
+        <p>Tu lugar de confianza para abastecer tus necesidades diarias. Ofrecemos una amplia variedad de productos,
+          desde alimentos básicos hasta artículos de limpieza y más.</p>
+        <p>Visítanos en:</p>
+        <address>
+          <strong>Dirección:</strong> DBN Mar del Plata Buenos Aires AR, Martín Miguel de Güemes 4702<br>
+          <strong>Teléfono:</strong> 0223 674-4094<br>
+          <strong>Horario:</strong> Abierto todos los días de 8:00 a 22:00 hs.
+        </address>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d392.84049454046885!2d-57.5533477!3d-38.0302144!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584ddd5557c6993%3A0x1a3f4ce41db48946!2sLo%20de%20Mat%C3%ADas!5e0!3m2!1ses-419!2sar!4v1715713394533!5m2!1ses-419!2sar"
+          width="300" height="200" style="border:0;" allowfullscreen="true" loading="lazy"
+          referrerpolicy="no-referrer"></iframe>
+
+      </div>
+      <!-- Video de fondo -->
+      <div class="sombra_video"></div>
+      <video autoplay cover loop muted class="video_background">
+        <source id="video_banner" src="./video_banner.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+      </video>
+    </section>
+    <!-- <section class="ofertas">
+            <div class="mostrador" id="mostrador">
+              <div class="fila">
+                <div class ="item">
+                  <div class="contenedor-foto">
+                    <img src="./static/img/1.png" alt="Producto 1">
+                    <p class="descripcion">Producto 1</p>
+                    <span class="precio">$42.499</span>
+        
+                    
+                  </div>
+                </div>
+                <div class ="item">
+                  <div class="contenedor-foto">
+                    <img src="./static/img/1.png" alt="Producto 1">
+                    <p class="descripcion">Producto 2</p>
+                    <span class="precio">$30.599</span>
+                  </div>
+                </div>
+                <div class ="item">
+                  <div class="contenedor-foto">
+                    <img src="./static/img/1.png" alt="Producto 1">
+                    <p class="descripcion">Producto 3</p>
+                    <span class="precio">$33.999</span>
+                  </div>
+                </div>
+                <div class ="item">
+                  <div class="contenedor-foto">
+                    <img src="./static/img/1.png" alt="Producto 1">
+                    <p class="descripcion">Producto 1</p>
+                    <span class="precio">$39.999</span>
+                  </div>
+                </div>
+                <div class ="item">
+                  <div class="contenedor-foto">
+                    <img src="./static/img/1.png" alt="Producto 1">
+                    <p class="descripcion">Producto 1</p>
+                    <span class="precio">$39.999</span>
+                  </div>
+                </div>
+                <div class ="item">
+                  <div class="contenedor-foto">
+                    <img src="./static/img/1.png" alt="Producto 1">
+                    <p class="descripcion">Producto 1</p>
+                    <span class="precio">$39.999</span>
+                  </div>
+                </div> -->
+    <section class="ofertas">
+      <!-- <h3>Mati Ofertas</h3> -->
+      <div class="mostrador" id="mostrador">
+        <div class="fila">
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./coke.webp" alt="Producto 1">
+              <p class="descripcion">Lata Coca-Cola 350ml</p>
+              <span class="precio">$1.000</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./pepsi.png" alt="Producto 1">
+              <p class="descripcion">Gaseosa Pepsi 1.5Lts</p>
+              <span class="precio">$1.599</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./papaslays.png" alt="Producto 1">
+              <p class="descripcion">Papas Lays Cebolla 330g</p>
+              <span class="precio">$1.200</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./fideosLaCampagnola.png" alt="Producto 1">
+              <p class="descripcion">Tirabuzon 500gr</p>
+              <span class="precio">$1.499</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./AceiteOlivaN.png" alt="Producto 1">
+              <p class="descripcion">Aceite Oliva 1lt</p>
+              <span class="precio">$3.599</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./pure de tomate.png" alt="Producto 1" width="10px" height="10px">
+              <p class="descripcion">Puré de tomate 500cc.</p>
+              <span class="precio">$999</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./cafeVirginia.png" alt="Producto 1">
+              <p class="descripcion">Café La Virginia 500gr.</p>
+              <span class="precio">$3.999</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./lataheineken.png" alt="Producto 1">
+              <p class="descripcion">Lata Cerveza Heineken 473ml.</p>
+              <span class="precio">$1.299</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./vinoQuara.png" alt="Producto 1">
+              <p class="descripcion">Vino tinto Quara 750cc.</p>
+              <span class="precio">$2.999</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./campari.png" alt="Producto 1">
+              <p class="descripcion">Campari 750 cc.</p>
+              <span class="precio">$4.000</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./fideos luchetti.png" alt="Producto 1">
+              <p class="descripcion">Tirabuzón 1kg.</p>
+              <span class="precio">$3.999</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="contenedor-foto">
+              <img src="./arroz gallo.png" alt="Producto 1">
+              <p class="descripcion">Arroz 1kg.</p>
+              <span class="precio">$3.599</span>
+            </div>
+          </div>
+
+        </div>
+        <!-- <img src="./img/1.png" alt="Producto 1">
+                    <h3>Producto 1</h3>
+                    <p>Precio: $3999.90</p> -->
+        <span class="descuento">-15%</span>
+      </div>
+      </div>
+      <!-- <img src="./img/1.png" alt="Producto 1">
+              <h3>Producto 1</h3>
+              <p>Precio: $3999.90</p> -->
+      <span class="descuento">-15%</span>
+      </div>
+      <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+      <!-- <div class="seleccion" id="seleccion">
+              <div class="cerrar">
+                &#x2715
+              </div>
+              <div class="info">
+                <img src="./img/1.png" alt="img">
+                <h2 id="modelo">Producto 1</h2>
+                <p id="descripcion">Descripcion Producto 1</p>
+        
+                <span class="precio" id="precio">$39.999</span>
+        
+                <div class="fila">
+                
+                  </div>
+                </div>
+              </div> -->
+      </div>
+    </section>
+    <section>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="icons">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+              <img src="./logo1.png" alt="imagen-Whisky-Jack-Daniels">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="producto-content">
+              <div class="producto-txt">
+                <span>$49.999</span>
+                <h3>Jack Daniels Old</h3>
+                <p>Mezclado exclusivamente con whiskies madurados por al menos 12 años, reúne sabores de los 4 rincones
+                  de Escocia para crear una experiencia compleja, profunda y enriquecedora.</p>
+              </div>
+              <div class="producto-img">
+                <img src="./1.png" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-1">Comprar</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="icons">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+              <img src="/logo1.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="producto-content">
+              <div class="producto-txt">
+                <span>$35.999</span>
+                <h3>J.D. Single Barrel</h3>
+                <p>Aromas suaves y elegantes de miel de brezo con un toque especiado. En boca está equilibrado con
+                  sabores dulces sutiles como el chocolate con leche, la manzana roja y la vainilla.
+                  Al final tiene un gusto fresco y floral que crea una sensación redonda.</p>
+              </div>
+              <div class="producto-img">
+                <img src="./2.png" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-1">Comprar</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="icons">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+              <img src="/logo1.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="producto-content">
+              <div class="producto-txt">
+                <span>$39.999</span>
+                <h3>Jack Daniels Gentleman</h3>
+                <p>De cuerpo medio, posee sin embargo un gusto muy suave. Enseguida se notan las notas herbáceas y
+                  florales..</p>
+              </div>
+              <div class="producto-img">
+                <img src="./3.png" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-1">Comprar</a>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="icons">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+              <img src="/logo1.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="producto-content">
+              <div class="producto-txt">
+                <span>$49.999</span>
+                <h3>Jack Daniels Old</h3>
+                <p>Mezclado exclusivamente con whiskies madurados por al menos 12 años, reúne sabores de los 4 rincones
+                  de Escocia para crear una experiencia compleja, profunda y enriquecedora.</p>
+              </div>
+              <div class="producto-img">
+                <img src="./1.png" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-1">Comprar</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="icons">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+              <img src="/logo1.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="producto-content">
+              <div class="producto-txt">
+                <span>$35.999</span>
+                <h3>J.D. Single Barrel</h3>
+                <p>Aromas suaves y elegantes de miel de brezo con un toque especiado. En boca está equilibrado con
+                  sabores dulces sutiles como el chocolate con leche, la manzana roja y la vainilla.
+                  Al final tiene un gusto fresco y floral que crea una sensación redonda.</p>
+              </div>
+              <div class="producto-img">
+                <img src="./2.png" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-1">Comprar</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="icons">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+              <img src="./logo1.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="producto-content">
+              <div class="producto-txt">
+                <span>$39.999</span>
+                <h3>Jack Daniels Gentleman</h3>
+                <p>De cuerpo medio, posee sin embargo un gusto muy suave. Enseguida se notan las notas herbáceas y
+                  florales..</p>
+              </div>
+              <div class="producto-img">
+                <img src="./3.png" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-1">Comprar</a>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="icons">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+              <img src="./logo1.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="producto-content">
+              <div class="producto-txt">
+                <span>$49.999</span>
+                <h3>Jack Daniels Old</h3>
+                <p>Mezclado exclusivamente con whiskies madurados por al menos 12 años, reúne sabores de los 4 rincones
+                  de Escocia para crear una experiencia compleja, profunda y enriquecedora.</p>
+              </div>
+              <div class="producto-img">
+                <img src="./1.png" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-1">Comprar</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="icons">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+              <img src="./logo1.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="producto-content">
+              <div class="producto-txt">
+                <span>$35.999</span>
+                <h3>J.D. Single Barrel</h3>
+                <p>Aromas suaves y elegantes de miel de brezo con un toque especiado. En boca está equilibrado con
+                  sabores dulces sutiles como el chocolate con leche, la manzana roja y la vainilla.
+                  Al final tiene un gusto fresco y floral que crea una sensación redonda.</p>
+              </div>
+              <div class="producto-img">
+                <img src="./2.png" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-1">Comprar</a>
+          </div>
+          <div class="swiper-slide">
+            <div class="icons">
+              <i class="fa-solid fa-circle-arrow-left"></i>
+              <img src="./logo1.png" alt="">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="producto-content">
+              <div class="producto-txt">
+                <span>$39.999</span>
+                <h3>Jack Daniels Gentleman</h3>
+                <p>De cuerpo medio, posee sin embargo un gusto muy suave. Enseguida se notan las notas herbáceas y
+                  florales..</p>
+              </div>
+              <div class="producto-img">
+                <img src="./3.png" alt="">
+              </div>
+            </div>
+            <a href="#" class="btn-1">Comprar</a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-sector1">
+        <ul>
+          <li><a href="#">Como trabajamos en Almacen lo de Matias</a></li>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Terminos y condiciones</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-sector2">
+        <h3>Atención al cliente</h3>
+        <p>¿Necesitas ayuda? Contáctanos por Whatsapp <br><span class="numero">(0223) 153 234890 <i
+              class="fa-brands fa-whatsapp"></i></span> </p>
+
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- Zona de scripts -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/7849b675c7.js" crossorigin="anonymous"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      loop: true,
+      coverflowEffect: {
+        depth: 500,
+        modifer: 1,
+        slidesShadows: true,
+        rotate: 0,
+        stretch: 0
+
+      }
+    })
+  </script>
+
+</body>
+
+</html>
